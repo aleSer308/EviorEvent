@@ -1,1 +1,7 @@
-# EviorEvent
+### (pagina Web Realizada para curso de Pofecinal Front end Developer UTNBA)
+# EivorEvents 
+## Está destinado a un sitio web que intenta a acercar personas con inquietudes de realizar eventos de diferentes tipos de servicio de eventos. Con los que tratara de reunir las condiciones para realizar un evento que el usuario desee realizar. 
+## De esta manera está estructurado para que el consumidor pueda identificar una variedad de recursos para llevar a cabo su evento. Ya sea el acondicionamiento de un lugar propio, como asó también, en algunos de los lugares que ofertan. Además podrá contar con la influencia de profesionales para la organización o realizarlo por sus propios medios. De esta manera, el consumidor no está cautivo de las imposiciones si así lo deseare. Podrá elegir etre varios servicios que estan desplegados por las redes sociales y en la web.  
+El usuario podrá vender del formato que más lo desee servicios de realización de eventos dependiendo logística y alcance. Podrá destacarse en base a comentarios de antiguos consumidores. Por otra parte estarán conectados a nuevos proveedores de servicios agrandando su base empresarial.
+## El diseño está pensado en una paleta de colores pasteles y sobrios qué están inspirados en las diseños de última moda. Cómo así también cada evento se realizara de una paleta de colores especial para lograr la conformidad visual en el producto y la conformación del evento que se desee realizar. Ya que prestara servicios para usuarios y Consumidores 
+.
