@@ -1,0 +1,212 @@
+body{
+    margin: 0px;
+    background-image: url("../images/home/hannah-busing-URVe89DA5Cw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: inherit;
+}
+
+/* header */
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top_header{ 
+    background-color: rgba(255, 255, 255, 1); 
+    padding-top: 5%;
+    width: 25px;
+    
+}
+
+.logo{ /*dispocicion del logo */
+    height: 325px;
+    margin: 20px;
+    border-radius: 180px;
+    mask-border-mode: luminance ;    
+}
+
+.search{ /* disposicion de la barrade busqueda*/
+    width: 200px;
+    border-radius: 20em;
+    margin: 2em;
+    padding: 2em;
+} 
+
+.nav_links{
+    
+}
+
+/* nav bar en el head */
+.navbar{ /* disposicion de la nav*/
+    width: auto;    
+    border: 0.25em solid rgb(000, 000, 000);
+    border-radius: 2em;
+    background-color: rgba(126, 128, 125, 0.5); 
+}
+
+.navbar li a{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-display: inherit;
+    font-weight: 400px;
+    color:rgba(28, 29, 28, 0.5)
+}
+
+
+/* slider en el  header */
+
+
+
+h2{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+    @keyframes slide {
+	0% { transform: translateX(0); }
+	10% { transform: translateX(0); }
+
+	15% { transform: translateX(-100%); }
+	30% { transform: translateX(-100%); }
+
+	35% { transform: translateX(-200%); }
+	50% { transform: translateX(-200%); }
+
+	55% { transform: translateX(-300%); }
+	70% { transform: translateX(-300%); }
+
+	75% { transform: translateX(-400%); }
+	90% { transform: translateX(-400%); }
+
+	95% { transform: translateX(-500%); }
+	100% { transform: translateX(-500%); }
+}
+
+/* * { box-sizing: border-box; } */
+
+/* html { scroll-behavior: smooth; } */
+
+/* body {
+	font-family: sans-serif;
+} */
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.slider {
+	position: relative;
+}
+
+.slides {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+
+.slide {
+	width: 100vw;
+	flex-shrink: 0;
+	animation-name: slide;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.slides:hover .slide {
+	animation-play-state: paused;
+}
+
+.slide img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.slide a {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.caption {
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 8vw;
+	position: absolute;
+	bottom: 8vw;
+	right: 4vw;
+}
+
+.slide:target {
+	animation-name: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+}
+
+.slider-controler {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 100;
+}
+
+.slider-controler li {
+	margin: 0 0.5rem;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.slider-controler a {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 1200px) {
+	.slide {
+		width: 1200px;
+	}
+
+	.caption {
+		font-size: 96px;
+		bottom: 96px;
+		right: 50px;
+	}
+}
+
+
+/* Body */
+
+main{  /* foto fondo de pagina*/
+    background-image: url("../images/home/hannah-busing-URVe89DA5Cw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: inherit;
+}
+
+.salones{
+    background-image: url("../images/home/stem-list-EVgsAbL51Rk-unsplash.jpg");
+}
+
+
+/* footer  */
+
+.logo-footer {
+    height:8em;
+    margin: 0.7em;
+
+}
+

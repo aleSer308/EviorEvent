@@ -4,72 +4,187 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>EvoirEvent</title>
 </head>
 <body>
-    <img src="../images/home/chuttersnap-aEnH4hJ_Mrs-unsplash.jpg" alt="">
-    <header class="Header">
-        <div class="logo">
-            <img src="" alt="" class="logo">
-        </div>
-        <div class="search">
-            <input type="text" placeholder="Buscar...">
-        </div>
+    <header>
+        <section class="top-header">
+            
+                <!-- <video src="../images/Logo/eviorEvent.mp4"></video> -->
+            <img src="../images/Logo/eviorEvent.jpg" alt="" class="logo">
+    
+            <div class="search">
+                <div>
 
-        <nav class="navbar">
-            <ul>
-                <lo> <a href="#">Quienes Somos</a></lo>
-                <li> <a href="#">Evento</a></li>
-                <li> <a href="#">Disponibilidad</a></li>
-                <li> <a href="#">Temas</a></li>
-                <li> <a href="#">Vestimenta</a></li>
-                <li> <a href="#">Servicios</a></li>
-                <li> <a href="#">Experiencias</a></li>
-            </ul>
-        </nav>
-        <section class="slider">
-            <h2>Disfruta de tu fiesta...</h2>
-            <h2>...Nosotrxs nos ocupamos.</h2>
-            <div>
-                <h4 href="#">Decubri la manera de percibir distintos estilos de vivir tu evento de la forma mas relajada y agraciada posible. Comfia, Solta y dejate llevar por el tu acontecimiento </h4>
+                    <input type="text" class="sch_imput" placeholder="Buscar...">
+
+                </div>
             </div>
+
+            <section class="nav-links">
+
+                <div class="list">
+                    <a class="Login" href="#">
+                        <i class=""></i>
+                        <p>Lista en evento</p>
+                    </a>
+                </div>
+    
+                <div class="account-item">
+                    <a class="Login" href="#">
+                        <i class=""></i>
+                        <p>Iniciar Sesión</p>
+                    </a>
+                </div>
+    
+                <div class="seting">
+                    <a class="Login" href="#">
+                        <i class=""></i>
+                        <p>justes</p>
+                    </a>
+                </div>
+
+            </section>
+
+        
+            <nav class="navbar">
+                <ol>
+                    <li> <a href="#">Quienes Somos</a></li>
+                    <li> <a href="#">Evento</a></li>
+                    <li> <a href="#">Disponibilidad</a></li>
+                    <li> <a href="#">Temas</a></li>
+                    <li> <a href="#">Vestimenta</a></li>
+                    <li> <a href="#">Servicios</a></li>
+                    <li> <a href="#">Experiencias</a></li>
+                </ol>
+            </nav>
         </section>
     </header>
-    <main class="section">
-        <img src="../images/home/hannah-busing-URVe89DA5Cw-unsplash.jpg" alt="">
-            <section class="aavailbiality">
-                <H2>Encontra la disponibilidad que tenemos para tu evento</H2>
-                <h3>Podes eleit tu lugar y conoseer todo nuestro servicios para poder reservar y asegurar tu fechaen tres simples</h3>
-                <label for="date">Fecha</label>
-                <input type="date" name="fecha" >
-                <label for="Cantidad">Cantidad de invitados</label>
-                <input type="number" name="cantidad" >
-                <label for="ubicacion">Zona</label>
-                <input type="text">
-                <label for="evento">Tipo de Evento</label>
-                <button>cotizar</button>           
-            </section>
-            <section class="salones">
-                <img src="../images/home/stem-list-EVgsAbL51Rk-unsplash.jpg" alt="">
-                <span>
-                    <ul>
-                        <li><a href="#">Salones</a></li>
-                        <li><a href="#">events planer</a></li>
-                        <li><a href="#">Quintas</a></li>
-                        <li><a href="#">Estancias</a></li>
-                        <li><a href="#">Restoranes</a></li>
-                        <li><a href="#">Catering</a></li>
-                        <li><a href="#">Pantalla</a></li>
-                        <li><a href="#">dj</a></li>
+
+       
+    
+            <section class="slider">
+
+                <div class="wrapper">
+                    <div class="slider" id="slider">
+                    <ul class="slides">
+                        <li class="slide" id="slide1">
+                        <a href="#">
+                            <p class="caption"><!-- <h2>Disfruta de tu fiesta...</h2>--></p>
+                            <img src="photo1.jpg" alt="photo 1">
+                        </a>
+                        </li>
+                        <li class="slide" id="slide2">
+                        <a href="#">
+                            <p class="caption">Texto llamativo</p>
+                            <img src="photo2.jpg" alt="photo 2">
+                        </a>
+                        </li>
+                        <li class="slide" id="slide3">
+                        <a href="#">
+                            <p class="caption">Texto llamativo</p>
+                            <img src="photo3.jpg" alt="photo 3">
+                        </a>
+                        </li>
+                        <li class="slide" id="slide4">
+                        <a href="#">
+                            <p class="caption">Texto llamativo</p>
+                            <img src="photo4.jpg" alt="photo 4">
+                        </a>
+                        </li>
+                        <li class="slide" id="slide5">
+                        <a href="#">
+                            <p class="caption">Texto llamativo</p>
+                            <img src="photo5.jpg" alt="photo 5">
+                        </a>
+                        </li>
+                        <li class="slide">
+                        <a href="#">
+                            <p class="caption">Texto llamativo</p>
+                            <img src="photo1.jpg" alt="photo 1">
+                        </a>
+                        </li>
                     </ul>
-                    <h2>Todo lo que nesesites</h2>
-                </span>
-                <button>Buscar</button>
-            </section>
+                    <ul class="slider-controler">
+                        <li><a href="#slide1">&bullet;</a></li>
+                        <li><a href="#slide2">&bullet;</a></li>
+                        <li><a href="#slide3">&bullet;</a></li>
+                        <li><a href="#slide4">&bullet;</a></li>
+                        <li><a href="#slide5">&bullet;</a></li>
+                    </ul>
+                    </div>
+                </div>
+
+                
+                <h2>...Nosotrxs nos ocupamos...</h2>
+            <div>
+                <h4 href="#">Decubri la manera de percibir distintos estilos de vivir tu evento de la forma mas relajada y agraciada posible. Comfia, Solta y dejate llevar por el tu acontecimiento </h4>
+            </div> -->
+        </section>
+    
+    <main class="section">
+        <section class="aavailbiality">
+            <H2>Encontra la disponibilidad que tenemos para tu evento</H2>
+            <h3>Podes eleit tu lugar y conoseer todo nuestro servicios para poder reservar y asegurar tu fechaen tres simples</h3>
+            <label for="date">Fecha</label>
+            <input type="date" name="fecha" >
+            <label for="Cantidad">Cantidad de invitados</label>
+            <input type="number" name="cantidad" >
+            <label for="ubicacion">Zona</label>
+            <input type="text">
+            <label for="evento">Tipo de Evento</label>
+            <button>cotizar</button>           
+        </section>
+        <section class="salones">
+            <span>
+                <ul>
+                    <li><a href="#">Salones</a></li>
+                    <li><a href="#">events planer</a></li>
+                    <li><a href="#">Quintas</a></li>
+                    <li><a href="#">Estancias</a></li>
+                    <li><a href="#">Restoranes</a></li>
+                    <li><a href="#">Catering</a></li>
+                    <li><a href="#">Pantalla</a></li>
+                    <li><a href="#">dj</a></li>
+                </ul>
+                <h2>Todo lo que nesesites</h2>
+            </span>
+            <button>Buscar</button>
+            <!-- <img src="../images/home/stem-list-EVgsAbL51Rk-unsplash.jpg" alt=""> -->
+        </section>
+        <!-- <img src="../images/home/hannah-busing-URVe89DA5Cw-unsplash.jpg" alt=""> -->
     </main>
-    <Footer>
-
-    </Footer>
-
 </body>
+<Footer>
+
+    <section class="container_footer">
+
+        <span class="contacfoot">
+            <h3>EvoirEvent S.A</h3>
+            <a href="#">Contacto</a>
+            <a href="#">Envíos & Contrtaciones</a>
+            <a href="#">Políticas de privacidad</a>            
+        </span>
+        
+        <span class="footLog">
+            <img src="../images/Logo/eviorEvent.jpg" class="logo-footer" alt="Icono de Aires">
+        </span>
+        
+        <span class="social_networks">
+            <h3>Redes Sociales</h3>
+            <a href="#"><i class=""></i> Facebook</a>
+            <a href="#"><i class=""></i> Instagram</a>
+            <a href="#"><i class=""></i> Tiktok</a>
+            <a href="#"><i class=""></i> twitter</a>
+            <a href="#"><i class=""></i> Pinterest</a>
+        </span>
+    </section>
+
+    <section class="footer_copyright">
+        <hr>
+        <p>&copy;2022 <b>EvoirEvent</b> - Todos los derechos reservados.</small></p>
+    </section>
+
+</Footer>
 </html>
