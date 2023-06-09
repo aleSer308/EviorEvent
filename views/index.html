@@ -9,25 +9,20 @@
     <title>EvoirEvent</title>
 </head>
 <body>
-    <header>
-        
+    <header>        
         <div class="container">
-            <!-- <div class="logo">
-            </div> -->
-            <img src="../images/Logo/Evior (2).jpg" alt="" class="logo">
-            <!-- <div class="title">
-            </div> -->
-            <h1>Evior Events</h1>
+            <div class="logo">
+                <img src="../images/Logo/Evior (2).jpg" alt="" class="logo">
+            </div>
+            <div class="title"> 
+                <h1>Evior Events</h1>
+            </div>
         </div>
         
         <div class="search">
+            <input type="text" class="sch_imput" placeholder="buscar">
             
-            <input type="text" class="sch_imput" >
-            <span>Buscar...</span>
-            <i></i>
         </div>
-        
-        
 
         <section class="account">
 
@@ -55,47 +50,113 @@
         </section>
     </header>
     <nav class="navbar">
-        <ol class="navbar_links">
-            <li> <a href="#">Quienes Somos</a></li>
-            <li> <a href="#">Evento</a></li>
-            <li> <a href="#">Disponibilidad</a></li>
-            <li> <a href="#">Temas</a></li>
-            <li> <a href="#">Vestimenta</a></li>
-            <li> <a href="#">Servicios</a></li>
-            <li> <a href="#">Experiencias</a></li>
+        <ol class="nav_links">
+            <li> <a href="#">Quienes Somos</a>
+                <ul class="hidden">
+                    <li><a href="#">historia de la idea</a></li>
+                    <li><a href="#">Los de atraz</a></li>
+                </ul>
+            </li>
+            <li> <a href="#">Evento</a>
+                <ul class="hidden">
+                    <li><a href="#">Eventos empresariales</a></li>
+                    <li><a href="#">Eventos Sociales</a></li>
+                    <li><a href="#">Eventos Corporativos</a></li>
+                    <li><a href="#">Cumpleaños</a></li>
+                    <li><a href="#">Baby Shower</a></li>
+                    <li><a href="#">Casamientos</a></li>
+                    <li><a href="#">Aniversarios</a></li>
+                </ul>
+            </li>
+            <li> <a href="#">Disponibilidad</a>
+                <ul class="hidden">
+                    <li><a href="#">Salones</a></li>
+                    <li><a href="#">Quintas</a></li>
+                    <li><a href="#">Estancias</a></li>
+                    <li><a href="#">Restaurantes</a></li>
+                    <li><a href="#">Estadios</a></li>
+                    <li><a href="#">Lugares Especiales</a></li>
+                </ul>
+            </li>
+            <li> <a href="#">Temas</a>
+                <ul class="hidden">
+                    <li><a href="#">Ambientaciones</a></li>
+                    <li><a href="#">Disfrases</a></li>
+                    <li><a href="#">Producciones ambientales</a></li>
+                    <li><a href="#">Paisajismos</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            <li> <a href="#">Vestimenta</a>
+                <ul class="hidden">
+                    <li><a href="3">Novias</a></li>
+                    <li><a href="#">Madrinas</a></li>
+                    <li><a href="#">Quince años</a></li>
+                    <li><a href="#">Trajes</a></li>
+                    <li><a href="#">Trajes de etiqueta</a></li>
+                    <li><a href="#">Disfraces niños</a></li>
+                    <li><a href="#">Difraces tematicoas adultos</a></li>
+                </ul>
+            </li>
+            <li> <a href="#">Servicios</a>
+                <ul class="hidden">
+                    <li><a href="#">Planners</a></li>
+                    <li><a href="#">Catering</a></li>
+                    <li><a href="#">Artistas</a></li>
+                    <li><a href="#">Eventos Especiales</a></li>
+                    <li><a href="#">Sorpresas</a></li>
+                    <li><a href="#">Tecnicos en Ambientacion</a></li>
+                    <li><a href="#">Florerioas</a></li>
+                    <li><a href="#">Fotografos</a></li>
+                    <li><a href="#">Mas..</a></li>
+                </ul>
+            </li>
+            <li> <a href="#">Experiencias</a>
+                <ul class="hidden">
+                    <li><a href="#">Galeria Casamieto</a></li>
+                    <li><a href="#">Cumpleaños</a></li>
+                    <li><a href="#">Eventos empresariasles</a></li>
+                    <li><a href="#">Jornadas Empresariales</a></li>
+                    <li><a href="#">Fiestas Varias</a></li>
+                </ul>
+            </li>
         </ol>
-    </nav>                
+    </nav>
+        <section>                
                 <h2>...Nosotrxs nos ocupamos...</h2>
             <div>
                 <h4 href="#">Decubri la manera de percibir distintos estilos de vivir tu evento de la forma mas relajada y agraciada posible. Comfia, Solta y dejate llevar por el tu acontecimiento </h4>
             </div> 
         </section>
     
-    <form action="get" class="section">
-        <section class="aavailbiality">
-            <H2>Encontra la disponibilidad que tenemos para tu evento</H2>
-            <h3>Podes eleit tu lugar y conoseer todo nuestro servicios para poder reservar y asegurar tu fechaen tres simples</h3>
-            <div>
-                <label for="date">
-                    Fecha<input type="date" name="fecha" >
-                </label>
-            </div>
-            <div>
-                <label for="Cantidad">
-                    Cantidad de invitados<input type="number" name="cantidad" >
-                </label>
-            </div>
-            <div>
-                <label for="ubicacion">
-                    Zona<input type="text">
-                </label>
-            </div>
-            <div>
-                <label for="evento" name="Evento">
-                    Tipo de Evento<input type="submit" value="Consultar"> 
-                </label>
-            </div>  
-        </section>
+        <form action="get" class="section">
+            <section class="availbility">
+                <H2>Encontra la disponibilidad que tenemos para tu evento</H2>
+                <h3>Podes eleit tu lugar y conoseer todo nuestro servicios para poder reservar y asegurar tu fechaen tres simples</h3>
+                <div>
+                    <label for="date">
+                        Fecha<input type="date" name="fecha" >
+                    </label>
+                </div>
+                <div>
+                    <label for="Cantidad">
+                        Cantidad de invitados<input type="number" name="cantidad" >
+                    </label>
+                </div>
+                <div>
+                    <label for="ubicacion">
+                        Zona<input type="text">
+                    </label>
+                </div>
+                <div>
+                    <label for="evento" name="Evento">
+                        Tipo de Evento<input type="submit" value="Consultar"> 
+                    </label>
+                </div>  
+            </section>
+        </form>
         <section class="salones">
             <span>
                 <ul>
@@ -114,7 +175,6 @@
             <!-- <img src="../images/home/stem-list-EVgsAbL51Rk-unsplash.jpg" alt=""> -->
         </section>
         <!-- <img src="../images/home/hannah-busing-URVe89DA5Cw-unsplash.jpg" alt=""> -->
-    </form>
 </body>
 <Footer>
 

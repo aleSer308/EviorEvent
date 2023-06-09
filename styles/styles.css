@@ -1,18 +1,31 @@
 :root {
-	color: #090804;
-	color: #c48439;
-	color: #d6b362;
-	color: #7c5c0c;
-	color: #bca47c;
-	color: #795e1f;
-	color: #5c0c0c;
-	color: #ccb0a0;
-	color: #7c443c;
-	color: #a47454;
-	color: #544433 ;
-	color: #cdae80;
-	color: #9e8767;
-	font-family: ;
+	--m1c1-color: rgb(92,13,12);
+	--m1c2-color: rgb(116,68,60);
+	--m1c3-color: rgb(140,67,31);
+	--m1c3op7-color: rgba(140,67,31, 0.7);
+	--m1c4-color: rgb(160,96,36);
+	--m1c5-color: rgb(169,132,116);
+	--m1c6-color: rgb(185,126,56);
+	--m1c7-color: rgb(202,157,77);
+	--m1c8-color: rgb(248,237,197);
+	--m1c8op5-color: rgba(248,237,197, 0.5);
+	--m2c1-color: rgb(38,27,4);
+	--m2c2-color: rgb(38,27,4);
+	--m2c3-color: rgb(74,53,9);
+	--m2c4-color: rgb(135,97,16);
+	--m2c5-color: rgb(185,141,60);
+	--m2c6-color: rgb(184,172,114);
+	--m2c7-color: rgb(180,164,124);
+	--m2c8-color: rgb(226, 200, 144);
+	--m3c1-color: rgb(55,55,55);
+	--m3c2-color: rgb(68,68,68);
+	--m3c3-color: rgb(100, 100, 100);
+	--mfre-font-family: 'Fredoka', sans-serif;
+	--mjust-font-family: 'Just Me Again Down Here', cursive;
+	--mnot-font-family: 'Noticia Text', serif;
+	--mpia-font-family: 'Piazzolla', serif;
+	--msha-font-family: 'Shadows Into Light', cursive;
+	--mfred-font-family: 'Fredericka the Great', cursive;
 }
 
 *{
@@ -23,6 +36,9 @@ body{
 	margin: 0px;/* anula el borde de la bistade todo el cuerpo */
 	padding: 0%; /* anula espacios en todo el cuerpo */
 	background-image: url(../images/home/hannah-busing-URVe89DA5Cw-unsplash.jpg);/* deja una imagen de fondo del cuerpo */
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;
 	
 }
 
@@ -48,126 +64,100 @@ header {
 
 h1 {
 	margin: 0%;
-	color: #bca47c;
+	color: var(--m1c7-color);
 	text-align: center;
-	/* poneer fuente */
+	font-family: var(--mfred-font-family);
+	text-shadow: 2px 2px 5px var(--m1c3-color);
 }
 
 .search {
 	position: relative;
-	width: 196px;
+	width: 200px;
+	height: 20px;
 }
 
-.search input{ /* disposicion de la barrade busqueda*/
-    width: 100px;
-    border: none;
-    margin: 2em;
-    padding: 2em;
+.search input{/* disposicion de la barrade busqueda*/
+    border-radius: 20px;
+    margin: 80px;
 	justify-content: center;
-} 
+}   
 
-/* serchcopiado */
-
-.search {
-	position: relative;
-	width: 196px;
-}
-
-.search input {
-	position: relative;
-	width: 100%;
-	padding: 20px 10px 10px;
-	background: transparent;
-	outline: none;
-	box-shadow: none;
-	border: none;
-	color: #090804;
-	font-size: 1em;
-	letter-spacing: 0.05em;
-	transition: 0.5s;
-	z-index: 10;
-}
-
-.search span {
-	/* position: absolute; */
-	left: 0;
-	padding: 20px 10px 10px;
-	font-size: 1em;
-	color: #ccb0a0;
-	letter-spacing: 00.05em;
-	transition: 0.5s;
-	pointer-events: none;
-}
-
-.search input:valid ~span,
-.search input:focus ~span {
-	color: #d6b362;
-	transform: translateX(-10px) translateY(-34px);
-	font-size: 0,75em;
-}
-
-.search i {
-	/* position: absolute; */
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 2px;
-	background: #cdae80;
-	border-radius: 4px;
-	transition: 0.5s;
-	pointer-events: none;
-	z-index: 9;
-}
-
-.search input:valid ~i,
-.search input:focus ~i {
-	height: 44px;
-}
-
-/* finde search copiado */
 .account { 
 	width: 33.33%;
 	padding-top: 50px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	align-items: center;
 }
 
 
-
-.list {
-	color: #544433;
+.list a {
+	color: var(--m3c3-color);
 	text-decoration: none;
+}
+
+.list i {
+	padding: 0 6px;
+    font-size: 30px;
+	justify-content: center;
 }
 
 
 /* nav bar en el head */
 
 .navbar{ /* disposicion de la nav*/
-    width: auto;
-    border: 0.25em solid rgb(000, 000, 000);
-    border-radius: 20%;
-    background-color: rgba(88, 90, 88, 0.5); 
-}
-
-.navbar_links{
-	list-style-type: none; /* esconde el estilo de lista */
-	display: flex; /*direccion de la navbar */
-	flex-direction: row; /* posiciona en fila */
-	justify-content: space-around; /* Da espacio acada elemento mostrandolo centrado */
-}
-
-.navbar li a{
-	text-decoration: none;
-    font-size: 20px;
-    font-family: 'Shadows Into Light', cursive;
-    font-display: inherit;
-    font-weight: 400px;
-    color:rgba(50, 114, 50, 0.5);
-	padding:20px;
+	/* realisar navbar para dejarlo quieto en el borde superior */
 	
 }
 
+.nav_links{
+	width: auto;
+	height: 30px;
+	border: 2px solid var(--m2c4-color);
+	background-color: var(--m1c8op5-color);
+	border-radius: 20%;
+	list-style-type: none; /* esconde el estilo de lista */
+	display: flex; /*direccion de la navbar*/
+	flex-direction: row; /* posiciona en fila*/
+	justify-content: space-around; /* Da espacio acada elemento mostrandolo centrado */
+	align-items: center; /* posiciona los items centrados en el nav */
+}
+
+.navbar li a{
+	/* margin-bottom: 5%; */
+	text-decoration: none; /* saca el sdubrrayado*/
+    font-size: 20px;
+	font-weight: bolder;
+    font-family: var(--msha-font-family);
+    color:var(--m1c1-color);	
+}
+
+.nav_links .hidden {
+	display: none; /*oculta lista */    
+}
+
+.navbar li:hover>ul {
+	display: block;
+	text-shadow: 3px 3px 5px var(--m2c8-color);
+	background-color: var(--m1c8op5-color);
+	position: absolute;
+}
+.hidden li:hover>a {
+	justify-content: flex-start;
+	color: var(--m1c4-color);
+}
+
+ul {
+	display: flex;
+	justify-content: space-evenly;
+	/* text-decoration: none; */
+	list-style-type: none; /* esconde el estilo de puntos lista */
+}
+
+/* ul li a {
+	text-decoration: none;
+} */
 
 /* slider en el  header */
 
@@ -175,11 +165,23 @@ h1 {
 
 h2{
     font-size: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    font-family:var(--mfre-font-family)
+}
+h4{
+	font-family: var(--mnot-font-family);
+	color: var(--m1c4-color);
 }
 
 /* Body */
+.section {
+	border: 3px solid var(--m2c6-color);
+	height: fit-content;
+}
+
+.avaibility {
+	display: flex;
+
+}
 
 main{  /* foto fondo de pagina*/
     background-image: url("../images/home/hannah-busing-URVe89DA5Cw-unsplash.jpg");
