@@ -5,9 +5,7 @@
 ## El usuario podrá vender del formato que más lo desee servicios de realización de eventos dependiendo logística y alcance. Podrá destacarse en base a comentarios de antiguos consumidores. Por otra parte estarán conectados a nuevos proveedores de servicios agrandando su base empresarial.
 ## El diseño está pensado en una paleta de colores pasteles y sobrios qué están inspirados en las diseños de última moda. Cómo así también cada evento se realizara de una paleta de colores especial para lograr la conformidad visual en el producto y la conformación del evento que se desee realizar. Ya que prestara servicios para usuarios y Consumidores tales como:
 	--m1c1-color: `rgb(92,13,12)`;
-`rgb(92,13,12)`
 	--m1c2-color: rgb(116,68,60);
-`rgb(116,68,60)`
 	--m1c3-color: rgb(140,67,31);
 	--m1c3op7-color: rgba(140,67,31, 0.7);
 	--m1c4-color: rgb(160,96,36);

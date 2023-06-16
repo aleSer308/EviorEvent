@@ -17,6 +17,7 @@
 	--m2c6-color: rgb(184,172,114);
 	--m2c7-color: rgb(180,164,124);
 	--m2c8-color: rgb(226, 200, 144);
+	--m2c8op3-color: rgba(226, 200, 144, 0.5);
 	--m3c1-color: rgb(55,55,55);
 	--m3c2-color: rgb(68,68,68);
 	--m3c3-color: rgb(100, 100, 100);
@@ -26,10 +27,13 @@
 	--mpia-font-family: 'Piazzolla', serif;
 	--msha-font-family: 'Shadows Into Light', cursive;
 	--mfred-font-family: 'Fredericka the Great', cursive;
+	--opc-opasity: 0.2;
 }
 
-*{
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -49,6 +53,7 @@ header {
 	flex-direction: row;/*direccionamiento en fila*/
 	flex-wrap: wrap ;/*precerva el tamaño de los elementos */
 	justify-content: space-around;
+	background-color: var(--m2c8op3-color);
 }
 
 .container{
@@ -70,6 +75,11 @@ h1 {
 	text-shadow: 2px 2px 5px var(--m1c3-color);
 }
 
+/* barra de buscador
+--darle estilo 
+--agregar botonde busqueda
+ */
+
 .search {
 	position: relative;
 	width: 200px;
@@ -81,6 +91,10 @@ h1 {
     margin: 80px;
 	justify-content: center;
 }   
+
+/* Botones de cuenta para inicio de sedion y lista de carro me gusta
+--agregar estilo 
+--y propiedades */
 
 .account { 
 	width: 33.33%;
@@ -101,20 +115,20 @@ h1 {
 	padding: 0 6px;
     font-size: 30px;
 	justify-content: center;
+	color: var(--m1c4-color);
 }
 
 
-/* nav bar en el head */
+/* navar en el head */
+/*  **realisar navbar para dejarlo quieto en el borde superior */
 
-.navbar{ /* disposicion de la nav*/
-	/* realisar navbar para dejarlo quieto en el borde superior */
-	
-}
+/* .navbar{ disposicion de la nav} */
 
 .nav_links{
 	width: auto;
 	height: 30px;
 	border: 2px solid var(--m2c4-color);
+	box-shadow: 3px var(--m2c8-color);
 	background-color: var(--m1c8op5-color);
 	border-radius: 20%;
 	list-style-type: none; /* esconde el estilo de lista */
@@ -128,8 +142,8 @@ h1 {
 	/* margin-bottom: 5%; */
 	text-decoration: none; /* saca el sdubrrayado*/
     font-size: 20px;
-	font-weight: bolder;
-    font-family: var(--msha-font-family);
+	font-weight: lighter;
+    font-family: var(--mfre-font-family);
     color:var(--m1c1-color);	
 }
 
@@ -155,42 +169,68 @@ ul {
 	list-style-type: none; /* esconde el estilo de puntos lista */
 }
 
-/* ul li a {
-	text-decoration: none;
-} */
-
 /* slider en el  header */
-
+/* *realizar el slider echo en nubo de archivo sliders */
 
 
 h2{
     font-size: 40px;
-    font-family:var(--mfre-font-family)
+    font-family:var(--mfre-font-family);
+	color: var(--m1c7-color);
+	text-shadow: 2px 2px 2px var(--m1c3-color);
 }
 h4{
 	font-family: var(--mnot-font-family);
+	font-size: 28px;
 	color: var(--m1c4-color);
+	text-shadow: 1.5px 1.5px 1.5px var(--m1c8-color);
 }
 
 /* Body */
+/* Primera seccion consultas
+*dispossicion Grid 
+implementacion deen la seccion
+*implementacion de degragdado de colores ( linear-gradient) o radialde colores ( radial-gradient)
+
+ */
+
+form {
+	display: flex;
+}
 .section {
+	background-color: var(--m2c8op3-color);
 	border: 3px solid var(--m2c6-color);
-	height: fit-content;
+	box-shadow: 3px 3px 3px var(--m2c7-color);
+	height: 400px;
+
+}
+
+h3{
+	font-family: var(--mpia-font-family);
+	color: var(--m2c2-color);
+	text-shadow: 2px 2px 2px var(--m2c7-color);
 }
 
 .avaibility {
-	display: flex;
-
+	justify-content: flex-end;
+}
+.inputs {
+	
 }
 
-main{  /* foto fondo de pagina*/
-    background-image: url("../images/home/hannah-busing-URVe89DA5Cw-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-position: inherit;
-}
+/* Seccion Salone  */
+
+/* main{  foto fondo de pagina */
+    /* background-image: url("../images/home/hannah-busing-URVe89DA5Cw-unsplash.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-position: inherit; */
+/* } */
 
 .salones{
+	height: 400px;
     background-image: url("../images/home/stem-list-EVgsAbL51Rk-unsplash.jpg");
+	background-size: inherit ; /*no muetra resultado deseado*/
+
 }
 
 
@@ -200,4 +240,9 @@ main{  /* foto fondo de pagina*/
     height:8em;
     margin: 0.7em;
 	border-radius: 20em;
+}
+
+/*copyright*/
+.copyright{
+	background-color: var(--m3c3-color);
 }
