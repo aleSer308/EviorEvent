@@ -1,0 +1,171 @@
+:root {
+	--m1c1-color: rgb(92,13,12);
+	--m1c2-color: rgb(116,68,60);
+	--m1c3-color: rgb(140,67,31);
+	--m1c3op7-color: rgba(140,67,31, 0.7);
+	--m1c4-color: rgb(160,96,36);
+	--m1c5-color: rgb(169,132,116);
+	--m1c6-color: rgb(185,126,56);
+	--m1c7-color: rgb(202,157,77);
+	--m1c8-color: rgb(248,237,197);
+	--m1c8op5-color: rgba(248,237,197, 0.5);
+	--m2c1-color: rgb(38,27,4);
+	--m2c2-color: rgb(38,27,4);
+	--m2c3-color: rgb(74,53,9);
+	--m2c4-color: rgb(135,97,16);
+	--m2c5-color: rgb(185,141,60);
+	--m2c6-color: rgb(184,172,114);
+	--m2c7-color: rgb(180,164,124);
+	--m2c8-color: rgb(226, 200, 144);
+	--m2c8op3-color: rgba(226, 200, 144, 0.5);
+	--m3c1-color: rgb(55,55,55);
+	--m3c2-color: rgb(68,68,68);
+	--m3c3-color: rgb(100, 100, 100);
+	--mfre-font-family: 'Fredoka', sans-serif;
+	--mjust-font-family: 'Just Me Again Down Here', cursive;
+	--mnot-font-family: 'Noticia Text', serif;
+	--mpia-font-family: 'Piazzolla', serif;
+	--msha-font-family: 'Shadows Into Light', cursive;
+	--mfred-font-family: 'Fredericka the Great', cursive;
+	--opc-opasity: 0.2;
+}
+
+* {
+    margin: 0;/* anula el borde de la bistade todo el cuerpo */
+    padding: 0; /* anula espacios en todo el cuerpo */
+    box-sizing: border-box;
+}
+body{
+	/*background-image: url(../images/home/hannah-busing-URVe89DA5Cw-unsplash.jpg);/* deja una imagen de fondo del cuerpo */
+	/* background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: cover;	 */
+    background-color: var(--m1c8-color);
+}
+
+header{
+    width: 10px;
+    /* height: 200px; */
+    display: grid;
+    grid-template: 3, 1fr/3, 1fr;
+    gap: 5px;
+    /* grid-auto-rows: minmax(200px, auto); */
+
+}
+
+.container1 {
+    grid-column: 1/2;
+    grid-row: 1;
+    z-index: 1;
+}
+
+.logo {
+	width: 120px; /*ancho del logo */
+	border-radius: 20em; /* hace redondo el logo*/
+	margin: 2px 30px 0px 30px;
+}
+
+h2 {
+	margin: 0%;
+	color: var(--m1c7-color);
+	text-align: center;
+	font-family: var(--mfred-font-family);
+	text-shadow: 2px 2px 5px var(--m1c3-color);
+}
+
+.container2 {
+    grid-column: 2/3;
+    grid-row: 1;
+    z-index: 1;
+}
+
+.search {
+    position: relative;
+}
+
+.container3 {
+    grid-column: 3/4;
+    grid-row: 1;
+    z-index: 1;
+
+}
+
+.account { 
+	width: 30px;
+	padding-top: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+.list a {
+	color: var(--m3c3-color);
+	text-decoration: none;
+}
+
+.list i {
+	padding: 0 6px;
+    font-size: 30px;
+	justify-content: center;
+	color: var(--m1c4-color);
+}
+
+nav {
+    /* grid-column: 1/span 4; */
+    /* grid-row: 2; */
+    grid-area: 2/1/3/4;
+    z-index: 1;
+    justify-self: self-start;
+}
+
+.nav_links{
+	width: auto;
+	height: 30px;
+	border: 2px solid var(--m2c4-color);
+	box-shadow: 3px var(--m2c8-color);
+	background-color: var(--m1c8op5-color);
+	border-radius: 20%;
+	list-style-type: none; /* esconde el estilo de lista */
+	display: flex; /*direccion de la navbar*/
+	flex-direction: row; /* posiciona en fila*/
+	justify-content: space-around; /* Da espacio acada elemento mostrandolo centrado */
+	align-items: center; /* posiciona los items centrados en el nav */
+}
+
+.navbar li a{
+	/* margin-bottom: 5%; */
+	text-decoration: none; /* saca el sdubrrayado*/
+    font-size: 20px;
+	font-weight: lighter;
+    font-family: var(--mfre-font-family);
+    color:var(--m1c1-color);	
+}
+
+.nav_links .hidden {
+	display: none; /*oculta lista */    
+}
+
+.navbar li:hover>ul {
+	display: block;
+	text-shadow: 3px 3px 5px var(--m2c8-color);
+	background-color: var(--m1c8op5-color);
+	position: absolute;
+	z-index: 3;
+}
+.hidden li:hover>a {
+	justify-content: flex-start;
+	color: var(--m1c4-color);
+	z-index: 3;
+}
+
+.container4 {
+    grid-column: 1/4;
+    grid-row: 5/1;
+}
+
+img{
+    width: 120px;
+    height: 80px;
+}
